@@ -5,3 +5,10 @@ create table person(
     birth_date timestamp,
     primary key(id)
 );
+
+insert into person(id, name, location, birth_date)
+values(10001, 'Rahul', 'Bihar', now());
+insert into person(id, name, location, birth_date)
+values(10002, 'Rahi', 'Bhopal', now());
+insert into person(id, name, location, birth_date)
+values(10003, 'Satendra', 'Bangalore', now());
