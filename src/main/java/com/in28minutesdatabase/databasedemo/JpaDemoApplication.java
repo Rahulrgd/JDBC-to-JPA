@@ -34,6 +34,7 @@ public class JpaDemoApplication implements CommandLineRunner {
       "\nInsert id 10004 -> {}",
       repository.insert(new Person("Shubham", "Gujrat", new Date()))
     );
+      repository.deleteById(10002);
     // logger.info("All user -> {}",  dao.findAll());
     // logger.info("\nDeleting User 10001 and number of rows affected -> {}",  dao.deleteById(10001));
     // logger.info("\nInsert new User -> {}",  dao.insert(new Person(10004, "Shubham", "Gujrat", new Date())));
