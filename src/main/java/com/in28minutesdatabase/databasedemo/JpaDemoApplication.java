@@ -26,6 +26,7 @@ public class JpaDemoApplication implements CommandLineRunner {
   @Override
   public void run(String... args) throws Exception {
     logger.info("\nUser id 10001 -> {}", repository.findById(10001));
+    logger.info("\nAll Users -> {}", repository.findAll());
     logger.info(
       "\nUpdate id 10001 -> {}",
       repository.update(new Person(10001, "Saurabh", "Bhopal", new Date()))
